@@ -30,7 +30,7 @@ export default function Leaderboard() {
 
         const fetchData = async () => {
             const responses = await Promise.allSettled(
-                userId.map(id => axios.get(`http://localhost:3001/api/leetcode/${id}`))
+                userId.map(id => axios.get(`https://lcp-x95r.onrender.com/api/leetcode/${id}`))
             );
             console.log(responses);
             const newUsers =  responses.filter(result => result.status === "fulfilled").map((res) => {
