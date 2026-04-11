@@ -128,7 +128,7 @@ export default function Leaderboard() {
                                     <div className={`w-9 h-9 rounded-full flex items-center justify-center text-xs font-medium ${color}`}>
                                         {initials}
                                     </div>
-                                    <div className="text-sm font-medium">@{user.username}</div>
+                                    <div className="text-sm font-medium"><a href={`https://leetcode.com/${user.username}/`} target="_blank" rel="noopener noreferrer">@{user.username}</a></div>
                                 </div>
 
                                 <BadgePill badge={user.badge} />
